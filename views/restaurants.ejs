@@ -1,0 +1,7 @@
+<h1>Restaurants</h1>
+<ul>
+  <% restaurants.forEach(function(restaurant) { %>
+    <li><%= restaurant.name %> - <%= restaurant.city %> - <%= restaurant.locality %></li>
+  <% }) %>
+</ul>
+<a href="/">Add New Restaurant</a>
