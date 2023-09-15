@@ -44,7 +44,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.get("/", (req, res) => {
-  res.render("index");
+  // res.render("index");
+  res.send('Hello there')
 });
 
 app.post("/restaurants", async (req, res) => {
