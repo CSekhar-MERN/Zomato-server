@@ -1,15 +1,16 @@
 {
     "version": 2,
+    "name": "beckend",
     "builds": [
-        {
-            "src":"./app.js",
-            "use":"@vercel/node"
-        }
+      {
+        "src": "app.js", 
+        "use": "@vercel/node"
+      }
     ],
-    "routes":[
-        {
-            "src":"/.",
-            "dist":"app.js"
-        }
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "app.js"
+      }
     ]
-}
+  }
